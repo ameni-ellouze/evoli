@@ -3,7 +3,7 @@ node {
 
     docker.withRegistry('https://hub.docker.com/', 'DockerHub') {
 
-        def customImage = docker.build("ameniii/test_evoli")
+        def customImage = docker.build("ameni/testevoli")
 
         /* Push the container to the custom Registry */
         customImage.push()
